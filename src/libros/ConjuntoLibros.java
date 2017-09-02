@@ -10,11 +10,11 @@ package libros;
  * @author Nicolas Garcia y Juan David Jaime
  */
 public class ConjuntoLibros {
-    //atributos clase conjuntolibros
+    //Atributos clase ConjuntoLibros
     private String nombre;
     private Libro[] libro;
     private int numlibros;
-//getters y setters atributos de conjuntolibros
+    //Getters y Setters atributos de ConjuntoLibros
     public String getNombre() {
         return nombre;
     }
@@ -38,14 +38,14 @@ public class ConjuntoLibros {
     public void setNumlibros(int numlibros) {
         this.numlibros = numlibros;
     }
- //constructor de conjuntolibros, se inicializa la clase libro con un array de tamaño 100 sin onbejots dentro 
+    //Constructor de ConjuntoLibros, se inicializa la clase Libro con un array de tamaño 100 sin objetos adentro 
     public ConjuntoLibros(String nombre) {
         this.nombre = nombre;
         this.libro= new Libro[100];
         this.numlibros=0;
        
     }
-    //Metodo que agrega un objeto de tipo libro a el conjunto de libros
+    //Metodo que agrega un objeto de tipo Libro a el objeto de clase ConjuntoLibros
     public boolean agregarLibro(String titulo, String autor, int numeropaginas, int calificacion){
       Libro libro = new Libro(titulo, autor, numeropaginas, calificacion);
        if(this.numlibros < 100){
@@ -57,8 +57,7 @@ public class ConjuntoLibros {
        return false; 
   
   }
-  //Metodo que elimina un objeto de tipo libro a el conjunto de libros segun su titulo
-
+    //Metodo que elimina un objeto de tipo Libro del objeto de clase ConjuntoLibros segun su titulo
     public boolean eliminarLibroTitulo(String titulo){
        if(this.numlibros>0){
             for(int i =0;i < this.numlibros;i++){ 
@@ -76,7 +75,7 @@ public class ConjuntoLibros {
             return false;
        }       
     }
-     //Metodo que elimina un objeto de tipo libro de  el conjunto de libros segun su autor
+    //Metodo que elimina un objeto de tipo Libro del objeto de clase ConjuntoLibros segun su autor
     public boolean eliminarLibroAutor(String autor){
        if(this.numlibros>0){
             for(int i =0;i < this.numlibros;i++){ 
@@ -94,7 +93,7 @@ public class ConjuntoLibros {
             return false;
        }       
     }
-   //Metodo que muestra el libro con la clasificacion mas alta y mas baja del arreglo conjuntolibros
+    //Metodo que muestra el libro con la calificacion mas alta y mas baja del objeto de clase ConjuntoLibros
     public void mayorYmenorCalificacion(){
       Libro mayor_calificacion = new Libro("nombre","autor",0,0);
         for (int i = 0; i < this.getNumlibros(); i++){
@@ -119,7 +118,7 @@ public class ConjuntoLibros {
             System.out.println("En este momento no hay un libro con menor calificacion que los demas");
         }
      }
-     //Metodo que imprime en pantalla la informacion de todos los libros guardados en el objeto de clase conjuntolibros
+    //Metodo que imprime en pantalla la informacion de todos los libros guardados en el objeto de clase ConjuntoLibros
     public void mostrarContenido(){
         for (int i = 0; i < this.getNumlibros(); i++) {
             System.out.println("LIBRO "+(i+1));
