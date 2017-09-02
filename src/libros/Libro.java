@@ -10,12 +10,13 @@ package libros;
  * @author Nicolas Garcia y Juan David Jaime
  */
 public class Libro {
+    //atributos de clase libro
     private String titulo;
     private String autor;
     private int numeropaginas;
     private int calificacion;
    
-
+//constructor libro
     public Libro(String titulo, String autor, int numeropaginas, int calificacion) {
         this.titulo = titulo;
         this.autor = autor;
@@ -23,7 +24,7 @@ public class Libro {
         this.calificacion = calificacion;
         
     }
-
+// getters y setters atributos de clase libro
     public String getTitulo() {
         return titulo;
     }
