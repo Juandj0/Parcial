@@ -12,6 +12,7 @@ import java.util.*;
  */
 public class Main {
     public static void main (String [] args){
+         //Main que prueba los metodos y atributos de las clases Producto y tienda
         Scanner flujoEntrada = new Scanner (System.in);
         Producto[] productos = new Producto[4];
         System.out.println("BIENVENIDO A TIENDA");

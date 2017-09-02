@@ -10,10 +10,11 @@ package tienda;
  * @author Nicolas Garcia y Juan David Jaime
  */
 public class Tienda {
+    //atributos de la clase tienda 
     private String nombre;
     private Producto[] productos;
     private double valor_total_ventas;
-
+//getters y setters de la clase tienda
     public String getNombre() {
         return nombre;
     }
@@ -37,13 +38,13 @@ public class Tienda {
     public void setValor_total_ventas(double valor_total_ventas) {
         this.valor_total_ventas = valor_total_ventas;
     }
-
+//constructor clase tienda
     public Tienda(String nombre, Producto[] productos) {
         this.nombre = nombre;
         this.productos = productos;
         this.valor_total_ventas = 0;
     }
-    
+    //metodo que permite  vender un producto de la clase tienda 
     public boolean vender (Producto producto, int cantidad){
         if (cantidad <= producto.getCantidad_actual()){
             this.valor_total_ventas = this.valor_total_ventas + ( cantidad * producto.getPrecio_final());
@@ -54,7 +55,7 @@ public class Tienda {
             return false;
         }
     }
-    
+    //metodo que permite hacer pedido si el stock del producto es menor que el tope minimo
     public boolean hacer_pedido (Producto producto, int cantidad){
         if (producto.getTope_minimo()> producto.getCantidad_actual()){
             producto.setCantidad_actual(producto.getCantidad_actual() + cantidad);
@@ -63,7 +64,11 @@ public class Tienda {
             return false;
         }
     }
-    
+    //metodo que muestra estadisticas de la tienda como:
+    //producto mas vendido
+    //producto menos vendido
+    //cantidad de dinero total obtenido por las ventas
+    //promedio de ventas de la tienda
     public boolean mostrar_estadisticas (){
         Producto mas_vendido = new Producto("nombre","supermercado",0,0,0);
         for (int i = 0; i < 4; i++){
