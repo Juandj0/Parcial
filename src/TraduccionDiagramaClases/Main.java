@@ -15,11 +15,11 @@ public class Main {
         Scanner lectura = new Scanner (System.in);
         System.out.println("BIENVENIDO");
         System.out.println("Por favor ingrese datos de la direccion de la tienda:");
-        System.out.println("Casa: ");
+        System.out.println("Casa:  ");
         String casa = lectura.next();
-        System.out.println("Condado: ");
+        System.out.println("Condado:  ");
         String condado = lectura.next();
-        System.out.println("Codigo postal: ");
+        System.out.println("Codigo postal:  ");
         String codigo_postal = lectura.next();
         Address direccion = new Address (casa, condado, codigo_postal);
         Store store = new Store (direccion);
