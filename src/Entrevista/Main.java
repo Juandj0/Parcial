@@ -36,7 +36,7 @@ public class Main {
         int opcion;
         int opcion2;
         do{
-            System.out.println("SUPERMERCADO");
+            System.out.println("SUPERMERCADO ");
             System.out.println("DIA: " + x.getDia()+ " de " + x.getMes().getNombre());
             System.out.println("MENU:");
             System.out.println(" ");

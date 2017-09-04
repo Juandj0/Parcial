@@ -13,7 +13,7 @@ import java.util.*;
 public class Main {
     public static void main (String [] args){
         Scanner lectura = new Scanner (System.in);
-        System.out.println("BIENVENIDO");
+        System.out.println("BIENVENIDO ");
         System.out.println("Por favor ingrese datos de la direccion de la tienda:");
         System.out.println("Casa:  ");
         String casa = lectura.next();
