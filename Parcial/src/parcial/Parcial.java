@@ -39,17 +39,17 @@ public class Parcial {
             opcion = lectura.nextInt();
             
             if (opcion==1){
-                     System.out.println("Nombre de sala");
+                     System.out.println("Nombre de sala:");
                     String nombresala=lectura.next();
-                      System.out.println("Semana numero(ingresar ejemplo:Semana numero 1) ");
+                      System.out.println("Semana numero(ingresar ejemplo:Semana numero 1): ");
                      String nombreSemana = lectura.next();
-                        System.out.println("Fecha ");
+                        System.out.println("Fecha: ");
                        String fecha= lectura.next();
-                        System.out.println(" nombre Dia ");
+                        System.out.println(" nombre Dia :");
                        String dia= lectura.next();
-                        System.out.println("Hora inicio ");
+                        System.out.println("Hora inicio: ");
                       String horainicio= lectura.next();
-                        System.out.println("Hora final ");
+                        System.out.println("Hora final: ");
                       String horafinal= lectura.next();
                        programa.addSalaSemanaDiaSegmento(nombresala,nombreSemana, fecha, dia, horainicio, horafinal);//;
                        programa.programacionEntera();
@@ -58,7 +58,7 @@ public class Parcial {
         
         
         // TODO code application logic here
-    }if(opcion==2){
+    }else if(opcion==2){
       System.out.println("Programacion entera:");
       programa.programacionEntera();
     }else{

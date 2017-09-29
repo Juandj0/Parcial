@@ -63,7 +63,7 @@ public class Programacion {
                      System.out.println(this.salas.get(i).getSemanas().get(j).getDias()[k].getNombre()); 
                       System.out.println(" ");
                       for(int d=0; d<this.salas.get(i).getSemanas().get(j).getDias()[k].getSegmentos().size();d++){
-                           System.out.println("Funcion programada");  
+                           System.out.println("Funcion programada:");  
                          System.out.println("Hora inicio "+ this.salas.get(i).getSemanas().get(j).getDias()[k].getSegmentos().get(d).getHorainicio());
                             System.out.println("Hora fin "+ this.salas.get(i).getSemanas().get(j).getDias()[k].getSegmentos().get(d).getHorafin());
                                System.out.println(" ");
