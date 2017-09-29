@@ -57,6 +57,9 @@ public class Parcial {
         
         
         // TODO code application logic here
+    }if(opcion==2){
+      System.out.println("Programacion entera:");
+      programa.programacionEntera();
     }else{
        System.out.println("OPCION INVALIDA ");      }
         } while(continuar==1);
