@@ -30,6 +30,7 @@ public class Parcial {
 //            System.out.println("MENU:");
 //            System.out.println(" ");
         System.out.println("1: Agendar funcion");
+          System.out.println("2: Mostrar informacion programacion entera");
 //            System.out.println("2. Inventarios.");
 //            System.out.println("3. Proovedores / Facturas.");
 //            System.out.println("4. Nomina.");
